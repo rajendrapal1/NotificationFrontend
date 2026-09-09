@@ -1,0 +1,195 @@
+/* =========================
+   LOGIN POPUP OVERLAY
+========================= */
+
+.modal-overlay {
+  position: fixed !important;
+
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+
+  width: 100vw !important;
+  height: 100vh !important;
+
+  background: rgba(0, 0, 0, 0.25);
+
+  z-index: 99999 !important;
+
+  /* IMPORTANT */
+  display: block !important;
+}
+
+
+/* =========================
+   LOGIN MODAL - LEFT SIDE
+========================= */
+
+.login-modal {
+  position: fixed !important;
+
+  left: 25px !important;
+
+  top: 50% !important;
+
+  transform: translateY(-50%) !important;
+
+  width: 420px !important;
+
+  max-width: calc(100vw - 50px);
+
+  background: white;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+  margin: 0 !important;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.login-modal .modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 20px;
+
+  background: #7e22ce;
+
+  color: white;
+}
+
+.login-modal .modal-header h2 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 22px;
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.login-modal .close-button {
+  border: none;
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+.login-modal .modal-body {
+  padding: 20px;
+}
+
+.login-modal .form-group {
+  padding: 0 !important;
+
+  margin-bottom: 18px;
+}
+
+.login-modal .form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-weight: 600;
+
+  color: #333;
+}
+
+.login-modal .form-group input {
+  width: 100%;
+
+  padding: 11px;
+
+  margin: 0;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  outline: none;
+}
+
+.login-modal .form-group input:focus {
+  border-color: #7e22ce;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.login-modal .modal-footer {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 15px 20px;
+
+  border-top: 1px solid #eee;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-modal .save-button {
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #7e22ce;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.login-modal .save-button:hover {
+  background: #6b21a8;
+}
+
+
+/* =========================
+   CANCEL BUTTON
+========================= */
+
+.login-modal .cancel-button {
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #da0b0b;
+
+  color: #15d10e;
+
+  cursor: pointer;
+}
